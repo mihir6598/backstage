@@ -3,37 +3,37 @@ apiVersion: backstage.io/v1beta2
 kind: Template
 # some metadata about the template itself
 metadata:
-  name: test-api-demo
+  name: v1beta2-demo
   title: Test Action template
-  description: make api call in backend
+  description: scaffolder v1beta2 template demo
 spec:
   owner: backstage/techdocs-core
   type: service
 
   # these are the steps which are rendered in the frontend with the form input
   parameters:
-    - title: Fill para1
+    - title: Fill in some steps
       required:
-        - para1
+        - name
       properties:
-        para1:
-          title: para1
+        name:
+          title: Name
           type: string
           description: Unique name of the component
           ui:autofocus: true
           ui:options:
             rows: 5
-    - title: Fill para2
+    - title: Choose a location
       required:
-        - para2
+        - repoUrl
       properties:
-        para2:
-          title: para2
+        repoUrl:
+          title: Repository Location
           type: string
-          description: Unique name of the component
-          ui:autofocus: true
+          ui:field: RepoUrlPicker
           ui:options:
-            rows: 5
+            allowedHosts:
+              - github.com
 
   # here's the steps that are executed in series in the scaffolder backend
   steps:
