@@ -30,7 +30,7 @@ spec:
       name: test
       action: mycompany:create-file
       input:
-        para1: '{{ parameters.name }}'
+        para2: '{{ parameters.name }}'
 
     # - id: fetch-base
     #   name: Fetch Base
