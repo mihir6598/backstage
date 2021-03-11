@@ -26,8 +26,8 @@ spec:
     
   # here's the steps that are executed in series in the scaffolder backend
   steps:
-    - id: test
-      name: test
+    - id: test2
+      name: test2
       action: mycompany:create-file
       input:
         para2: '{{ parameters.name }}'
