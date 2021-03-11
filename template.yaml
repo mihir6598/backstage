@@ -36,14 +36,14 @@ spec:
             rows: 5
 
   # here's the steps that are executed in series in the scaffolder backend
-  # steps:
-  #   - id: fetch-base
-  #     name: Fetch Base
-  #     action: fetch:cookiecutter
-  #     input:
-  #       url: ./template
-  #       values:
-  #         name: '{{ parameters.name }}'
+  steps:
+    - id: fetch-base
+      name: Fetch Base
+      action: fetch:cookiecutter
+      input:
+        url: ./template
+        values:
+          name: '{{ parameters.name }}'
 
   #   - id: fetch-docs
   #     name: Fetch Docs
