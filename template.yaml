@@ -37,6 +37,12 @@ spec:
 
   # here's the steps that are executed in series in the scaffolder backend
   steps:
+    - id: test
+      name: test
+      action: custom:createNewFileAction
+      input:
+        para1: '{{ parameters.name }}'
+
     - id: fetch-base
       name: Fetch Base
       action: fetch:cookiecutter
