@@ -39,7 +39,7 @@ spec:
   steps:
     - id: test
       name: test
-      action: custom:createNewFileAction
+      action: mycompany:create-file
       input:
         para1: '{{ parameters.name }}'
 
