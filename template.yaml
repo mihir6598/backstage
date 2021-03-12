@@ -26,11 +26,11 @@ spec:
     
   # here's the steps that are executed in series in the scaffolder backend
   steps:
-    - id: test2
-      name: test2
+    - id: test3
+      name: test3
       action: mycompany:create-file
       input:
-        para2: '{{ parameters.name }}'
+        para1: '{{ parameters.name }}'
 
     # - id: fetch-base
     #   name: Fetch Base
