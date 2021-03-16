@@ -8,5 +8,6 @@ spec:
   profile:
     displayName: test-group
     email: infrastructure@example.com
-    # picture: https://example.com/groups/bu-infrastructure.jpeg
-  
+    picture: https://example.com/groups/bu-infrastructure.jpeg
+  parent: ops
+  children: [backstage, other]
