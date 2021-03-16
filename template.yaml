@@ -17,9 +17,9 @@ spec:
         - p1
       properties:
         p1:
-          title: para1
+          title: parameter1
           type: string
-          description: para1
+          description: parameter1
           ui:autofocus: true
           ui:options:
             rows: 5
