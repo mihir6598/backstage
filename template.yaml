@@ -12,22 +12,22 @@ spec:
 
   # these are the steps which are rendered in the frontend with the form input
   parameters:
-    - title: Fill parameters
+    - title: Fill in some steps
       required:
-        - para1
+        - name
       properties:
         name:
-          title: para1
+          title: Name
           type: string
-          description: para1
+          description: Unique name of the component
           ui:autofocus: true
           ui:options:
             rows: 5
     
   # here's the steps that are executed in series in the scaffolder backend
   steps:
-    - id: test api
-      name: test api 
+    - id: test3
+      name: test3
       action: mycompany:create-file
       input:
         para1: '{{ parameters.name }}'
