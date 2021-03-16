@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: test-group
+  description: test-group
+spec:
+  type: business-unit
+  profile:
+    displayName: test-group
+    email: infrastructure@example.com
+    # picture: https://example.com/groups/bu-infrastructure.jpeg
+  
