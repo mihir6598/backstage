@@ -4,22 +4,22 @@ kind: Template
 # some metadata about the template itself
 metadata:
   name: v1beta2-demo
-  title: Test mihir
-  description: mihir
+  title: Test API call
+  description: Test API call
 spec:
   owner: backstage/techdocs-core
   type: service
 
   # these are the steps which are rendered in the frontend with the form input
   parameters:
-    - title: Fill in some steps
+    - title: Fill parameters
       required:
-        - name
+        - para1
       properties:
         name:
-          title: Name
+          title: para1
           type: string
-          description: Unique name of the component
+          description: para1
           ui:autofocus: true
           ui:options:
             rows: 5
@@ -30,7 +30,7 @@ spec:
       name: test3
       action: mycompany:create-file
       input:
-        para1: '{{ parameters.name }}'
+        para1: '{{ parameters.para1 }}'
 
     # - id: fetch-base
     #   name: Fetch Base
