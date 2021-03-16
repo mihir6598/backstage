@@ -4,8 +4,8 @@ kind: Template
 # some metadata about the template itself
 metadata:
   name: v1beta2-demo
-  title: Test API call
-  description: Test API call
+  title: Test mihir
+  description: mihir
 spec:
   owner: backstage/techdocs-core
   type: service
