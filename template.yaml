@@ -16,7 +16,7 @@ spec:
       required:
         - para1
       properties:
-        name:
+        para1:
           title: para1
           type: string
           description: para1
