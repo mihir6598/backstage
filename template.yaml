@@ -14,9 +14,9 @@ spec:
   parameters:
     - title: Fill parameters
       required:
-        - para1
+        - p1
       properties:
-        para1:
+        p1:
           title: para1
           type: string
           description: para1
@@ -26,11 +26,11 @@ spec:
     
   # here's the steps that are executed in series in the scaffolder backend
   steps:
-    - id: test3
-      name: test3
+    - id: test api
+      name: test api
       action: mycompany:create-file
       input:
-        para1: '{{ parameters.para1 }}'
+        para1: '{{ parameters.p1 }}'
 
     # - id: fetch-base
     #   name: Fetch Base
