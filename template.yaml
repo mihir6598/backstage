@@ -28,7 +28,7 @@ spec:
   steps:
     - id: test api
       name: test api
-      action: mycompany:create-file
+      action: api:get-request
       input:
         para1: '{{ parameters.p1 }}'
 
